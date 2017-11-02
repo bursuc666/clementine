@@ -23,3 +23,19 @@
     float: left;
     padding: 5px;
 }
+
+.col-md-2 sidebar sidebar-right{
+    width: 19%;
+    float: right;
+    display: inline-block;
+}
+
+
+.content col-md-10{
+     width: 80%;
+    float: left;
+}
+
+.article.blog-post{
+margin-left:20%;
+}
