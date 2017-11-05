@@ -54,6 +54,9 @@
   height: auto;
 }
 
+.layer-content .excerpt{
+  display: none;
+}
 
 .post-grid .owl-theme .owl-controls .owl-buttons div {
   background: rgb(28, 155, 236) none repeat scroll 0 0;
