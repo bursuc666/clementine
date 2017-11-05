@@ -63,6 +63,23 @@
   overflow: hidden;
 }
 
+.post-grid .layer-content .title{
+  display: block;
+  font-size: 19px !important;
+  line-height: normal;
+  padding: 5px 10px;
+  text-align: center !important;
+  font-family: oswald;
+}
+
+.post-grid .share_button {
+  font-size: 12px;
+  display: block;
+  position: relative !important;
+  padding: 10px;
+  top: -70px !important;
+}
+
 .post-grid .owl-theme .owl-controls .owl-buttons div {
   background: rgb(28, 155, 236) none repeat scroll 0 0;
 }
