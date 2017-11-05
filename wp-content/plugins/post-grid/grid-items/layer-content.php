@@ -407,7 +407,7 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 				<a target="_blank" href="https://twitter.com/intent/tweet?url='.get_permalink().'&text='.get_the_title().'"></a>
 			</span>
 			<span class="pinterest">
-				<a target="_blank" href="http://pinterest.com/pin/create/button/?url='.$postpermalink.'&media='.$imageurl.'" ></a>
+				<a target="_blank" href="http://pinterest.com/pin/create/button/?url='.$postpermalink.'&media='.$imageurl.'&description='.get_the_title().'" ></a>
 			</span>
 			';
 			
