@@ -18,12 +18,17 @@
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
+
+  float: left;
 }
 
 .post-grid .item {
   background: rgb(255, 255, 255) none repeat scroll 0 0;
   display: inline-block;
   vertical-align: top;
+
+  margin-left:0px !important;
+  margin-right:20px !important;
 }
 
 .post-grid .no-post-found {
