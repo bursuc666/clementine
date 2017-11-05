@@ -26752,7 +26752,7 @@ div.pp_default .pp_nav {
   top: -30px !important;
 }
 .fixed-header .header-logo {
-  width: 25%;
+  width: 10%;
 }
 .fixed-header .header-logo img {
   max-height: 90px;
@@ -26762,7 +26762,7 @@ div.pp_default .pp_nav {
   display: block;
 }
 .fixed-header .navbar-header {
-  width: 23%;
+  width: 8%;
   padding-right: 1.14em;
 }
 .fixed-header .navbar-header .et-wishlist-widget {
