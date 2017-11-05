@@ -466,11 +466,11 @@ background:rgb(255, 255, 255) url("images/arrow-next.png") no-repeat scroll 3px 
 }
 
 .post-grid .share_button .fb {
-  background: rgba(0, 0, 0, 0) url("icons/facebook.png") repeat scroll 0 0 / 100% auto;
+  background: rgba(0, 0, 0, 0) url("icons/facebook-logo.svg") repeat scroll 0 0 / 100% auto;
 }
 
 .post-grid .share_button .twitter {
-  background: rgba(0, 0, 0, 0) url("icons/twitter.png") repeat scroll 0 0 / 100% auto;
+  background: rgba(0, 0, 0, 0) url("icons/twitter-social-logotype.svg") repeat scroll 0 0 / 100% auto;
 }
 
 .post-grid .share_button .gplus {
