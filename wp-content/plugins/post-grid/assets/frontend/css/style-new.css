@@ -76,9 +76,7 @@
 .post-grid .share_button {
   font-size: 12px;
   display: block;
-  position: relative !important;
   padding: 10px;
-  top: -85px !important;
 }
 
 .post-grid .owl-theme .owl-controls .owl-buttons div {
