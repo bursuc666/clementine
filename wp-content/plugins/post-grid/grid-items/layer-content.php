@@ -397,8 +397,9 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 			$html_content.='<div class="element element_'.$item_id.' '.$item_key.'"  >';
 			
 			$html_share_buttons = '';
-			
-			$html_share_buttons.= '
+            $postpermalink = urlencode( get_permalink() );
+            $imageurl = urlencode( wp_get_attachment_url( get_post_thumbnail_id($post->ID) ) );
+            $html_share_buttons.= '
 			<span class="fb">
 				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.get_permalink().'"> </a>
 			</span>
@@ -409,7 +410,7 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 				<a target="_blank" href="https://twitter.com/intent/tweet?url='.get_permalink().'&text='.get_the_title().'"></a>
 			</span>
 			<span class="pinterest">
-				<a target="_blank" href="https://twitter.com/intent/tweet?url='.get_permalink().'&text='.get_the_title().'"></a>
+				<a target="_blank" href="http://pinterest.com/pin/create/button/?url='.$postpermalink.'&media='.$imageurl." ></a>
 			</span>
 			';
 			
