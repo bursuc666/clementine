@@ -55,7 +55,7 @@
 }
 
 .layer-content .excerpt{
-  display: none;
+  display: none !important;
 }
 
 .post-grid .owl-theme .owl-controls .owl-buttons div {
