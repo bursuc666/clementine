@@ -402,12 +402,16 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 			<span class="fb">
 				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.get_permalink().'"> </a>
 			</span>
+			<span class="instagram">
+				<a target="_blank" href="https://twitter.com/intent/tweet?url='.get_permalink().'&text='.get_the_title().'"></a>
+			</span>
 			<span class="twitter">
 				<a target="_blank" href="https://twitter.com/intent/tweet?url='.get_permalink().'&text='.get_the_title().'"></a>
 			</span>
-			<span class="gplus">
-				<a target="_blank" href="https://plus.google.com/share?url='.get_permalink().'"></a>
-			</span>';
+			<span class="pinterest">
+				<a target="_blank" href="https://twitter.com/intent/tweet?url='.get_permalink().'&text='.get_the_title().'"></a>
+			</span>
+			';
 			
 			$html_content.= apply_filters('post_grid_filter_share_buttons',$html_share_buttons);			
 

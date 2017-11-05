@@ -504,6 +504,14 @@ background:rgb(255, 255, 255) url("images/arrow-next.png") no-repeat scroll 3px 
   background: rgba(0, 0, 0, 0) url("icons/twitter-social-logotype.svg") repeat scroll 0 0 / 100% auto;
 }
 
+.post-grid .share_button .instagram {
+  background: rgba(0, 0, 0, 0) url("icons/instagram-social-network-logo-of-photo-camera.svg") repeat scroll 0 0 / 100% auto;
+}
+
+.post-grid .share_button .pinterest {
+  background: rgba(0, 0, 0, 0) url("icons/pinterest-social-logo.svg") repeat scroll 0 0 / 100% auto;
+}
+
 .post-grid .share_button .gplus {
   background: rgba(0, 0, 0, 0) url("icons/gplus.png") repeat scroll 0 0 / 100% auto;
 }
