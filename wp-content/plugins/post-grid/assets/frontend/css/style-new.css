@@ -58,10 +58,7 @@
   display: none !important;
 }
 
-.post-grid .item .layer-media {
-  min-height: 220px !important;
-  overflow: hidden;
-}
+
 
 .post-grid .layer-content .title{
   display: block;
