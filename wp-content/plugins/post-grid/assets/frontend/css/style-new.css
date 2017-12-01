@@ -27,8 +27,8 @@
   display: inline-block;
   vertical-align: top;
 
-  margin-left:0px !important;
-  margin-right:20px !important;
+  /*margin-left:0px !important;
+  margin-right:20px !important;*/
 }
 
 .post-grid .no-post-found {
