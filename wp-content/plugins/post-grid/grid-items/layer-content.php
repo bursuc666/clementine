@@ -57,7 +57,7 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 		
 		if($item_key=='title'){
 			$html_content.='<div class="element element_'.$item_id.' '.$item_key.'"  >';
-			$html_content.= apply_filters('post_grid_filter_grid_item_title',wp_trim_words(get_the_title(), $char_limit,''));
+			$html_content.= '<a href="'.get_permalink().'">'.apply_filters('post_grid_filter_grid_item_title',wp_trim_words(get_the_title(), $char_limit,'')).'</a>';
 			$html_content.='</div>';
 			}
 			
