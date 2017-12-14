@@ -609,7 +609,7 @@ var etTheme;
             // **********************************************************************//
             // ! Fixed header
             // **********************************************************************//
-            
+            console.log('here');
             if ( $( 'body' ).hasClass( 'et-fixed-disable' ) ) return;
             if ( $( 'body' ).hasClass( 'et-vertical-fixed' ) && $(window).width() > 992 ) return;
 
