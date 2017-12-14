@@ -10,7 +10,7 @@
 					<!-- Mobile menu button -->
 					<a href="#" class="navbar-toggle">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
+						<span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 		            </a>

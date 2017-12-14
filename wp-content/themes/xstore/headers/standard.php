@@ -17,7 +17,7 @@
                     <?php etheme_shop_navbar( 'header', array( 'search' ) ); ?>
                     <a href="#" class="navbar-toggle">
                         <span class="sr-only"><?php esc_html_e('Menu', 'xstore'); ?></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
@@ -32,7 +32,7 @@
                             <div class="secondary-menu-wrapper">
                                 <div class="secondary-title">
                                     <div class="secondary-menu-toggle">
-                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </div>
