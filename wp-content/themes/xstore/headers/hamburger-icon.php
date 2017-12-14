@@ -56,7 +56,7 @@
                       <span></span>
                     </div>
             </div>
-            <div class="navbar-toggle"> <span class="sr-only">Menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></div>
+            <div class="navbar-toggle"> <span class="sr-only">Menu</span> <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span> <span class="icon-bar"></span> <span class="icon-bar"></span></div>
         </div>
     </header>
 </div>
