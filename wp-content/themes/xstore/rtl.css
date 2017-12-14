@@ -1035,6 +1035,7 @@ ul.arrow > li:before {
   .fixed-header .navbar-toggle {
     left: 10px;
     right: auto !important;
+    display:block !important;
   }
   .header-wrapper .navbar-header,
   .fixed-header .navbar-header {
