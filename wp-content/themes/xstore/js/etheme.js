@@ -639,7 +639,7 @@ var etTheme;
             if ( logo == null ) logo = '';
             if ( menuHtml == null ) menuHtml = '';
             if ( navbar == null ) navbar = '';
-            if ( menuBtn == null ) menuBtn = '<span class="sr-only">Menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>';
+            if ( menuBtn == null ) menuBtn = '<span class="sr-only">Menu</span><span class="icon-bar">><i class="fa fa-bars" aria-hidden="true"></i></span><span class="icon-bar"></span><span class="icon-bar"></span>';
             
             var fixedHeaderHtml = '<div class="fixed-header header-color-' + color + '"><div class="container"><div class="header-logo">' + logo + '</div><div class="' + menuClass + '">' + menuHtml + '</div><div class="navbar-header">' + navbar + '</div><div class="navbar-toggle">' + menuBtn + '</div></div></div>';
 
