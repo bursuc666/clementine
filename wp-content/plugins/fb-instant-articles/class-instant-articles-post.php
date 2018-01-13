@@ -697,9 +697,22 @@ class Instant_Articles_Post {
 		$the_content = $this->get_the_content();
 		//REMOVE SHORT TAGS HERE AND TRANSFORM THE YOUTUBE SHORT_TAGS
         preg_match_all( '/\[vc_row(.*)row\]/iUs', $the_content, $vc_matches );
-        foreach ( $vc_matches[0] as $vc ) {
-            $the_content = str_replace( $vc, '', $the_content );
+        if(!empty($vc_matches[0])){
+            foreach ( $vc_matches[0] as $vc ) {
+                $the_content = str_replace( $vc, '', $the_content );
+            }
         }
+
+        preg_match_all( '\[embedyt\](.*)\[/iUs', $the_content, $yt_matches );
+        if(!empty($yt_matches[0])){
+            foreach ( $yt_matches[0] as $kyt => $yt ) {
+                $the_content = str_replace( $yt, '<figure class="op-interactive">
+                      <iframe src="'.$yt_matches[0][$kyt].'"></iframe>
+                    </figure>', $the_content );
+            }
+        }
+
+
 
 		if (!Type::isTextEmpty($the_content)) {
 			$transformer->transformString( $this->instant_article, $the_content, get_option( 'blog_charset' ) );
