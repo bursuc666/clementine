@@ -40,7 +40,7 @@ $last_modified = null;
             if(!empty($yt_matches[0])){
                 foreach ( $yt_matches[0] as $kyt => $yt ) {
                     $the_content = str_replace( $yt, '<figure class="op-interactive">
-                      <iframe src="'.$yt_matches[0][$kyt].'"></iframe>
+                      <iframe src="'.$yt_matches[1][$kyt].'"></iframe>
                     </figure>', $the_content );
                 }
             }
