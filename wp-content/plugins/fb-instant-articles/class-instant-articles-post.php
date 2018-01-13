@@ -703,7 +703,7 @@ class Instant_Articles_Post {
             }
         }
 
-        preg_match_all( '\[embedyt\](.*)\[/iUs', $the_content, $yt_matches );
+        preg_match_all( '/\[embedyt\](.*)\[/iUs', $the_content, $yt_matches );
         if(!empty($yt_matches[0])){
             foreach ( $yt_matches[0] as $kyt => $yt ) {
                 $the_content = str_replace( $yt, '<figure class="op-interactive">
