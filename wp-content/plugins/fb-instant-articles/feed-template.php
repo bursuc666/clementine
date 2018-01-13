@@ -46,7 +46,7 @@ $last_modified = null;
             }
 
             ?>
-			<item1>
+			<item>
 				<title><?php echo esc_html( $instant_article_post->get_the_title() ); ?></title>
 				<link><?php echo esc_url( $instant_article_post->get_canonical_url() ); ?></link>
 				<content:encoded>
@@ -62,7 +62,7 @@ $last_modified = null;
 						<author><?php echo esc_html( $author->display_name ); ?></author>
 					<?php endforeach; ?>
 				<?php endif; ?>
-			</item1>
+			</item>
 		<?php endwhile; ?>
 		<?php if ( ! is_null( $last_modified ) ) : ?>
 			<lastBuildDate><?php echo esc_html( $last_modified ); ?></lastBuildDate>
