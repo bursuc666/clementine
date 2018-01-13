@@ -695,6 +695,12 @@ class Instant_Articles_Post {
 		}
 
 		$the_content = $this->get_the_content();
+		//REMOVE SHORT TAGS HERE AND TRANSFORM THE YOUTUBE SHORT_TAGS
+        preg_match_all( '/\[vc_row(.*)row\]/iUs', $the_content, $vc_matches );
+        foreach ( $vc_matches[0] as $vc ) {
+            $the_content = str_replace( $vc, '', $the_content );
+        }
+
 		if (!Type::isTextEmpty($the_content)) {
 			$transformer->transformString( $this->instant_article, $the_content, get_option( 'blog_charset' ) );
 		}
