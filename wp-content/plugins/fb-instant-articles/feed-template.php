@@ -35,12 +35,22 @@ $last_modified = null;
 			if ( is_null( $last_modified ) ) {
 				$last_modified = $instant_article_post->get_the_moddate_iso();
 			}
-			?>
+            $the_content =  $instant_article_post->to_instant_article()->render();
+            preg_match_all( '\[embedyt\](.*)\[/iUs', $the_content, $yt_matches );
+            if(!empty($yt_matches[0])){
+                foreach ( $yt_matches[0] as $kyt => $yt ) {
+                    $the_content = str_replace( $yt, '<figure class="op-interactive">
+                      <iframe src="'.$yt_matches[0][$kyt].'"></iframe>
+                    </figure>', $the_content );
+                }
+            }
+
+            ?>
 			<item>
 				<title><?php echo esc_html( $instant_article_post->get_the_title() ); ?></title>
 				<link><?php echo esc_url( $instant_article_post->get_canonical_url() ); ?></link>
 				<content:encoded>
-					<![CDATA[<?php echo $instant_article_post->to_instant_article()->render(); ?>]]>
+					<![CDATA[<?php echo  $the_content ; ?>]]>
 				</content:encoded>
 				<guid isPermaLink="false"><?php esc_html( the_guid() ); ?></guid>
 				<description><![CDATA[<?php echo esc_html( $instant_article_post->get_the_excerpt() ); ?>]]></description>
