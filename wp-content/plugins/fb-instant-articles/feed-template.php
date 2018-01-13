@@ -36,7 +36,7 @@ $last_modified = null;
 				$last_modified = $instant_article_post->get_the_moddate_iso();
 			}
             $the_content =  $instant_article_post->to_instant_article()->render();
-            preg_match_all( '\[embedyt\](.*)\[/iUs', $the_content, $yt_matches );
+            preg_match_all( '/\[embedyt\](.*)\[/iUs', $the_content, $yt_matches );
             if(!empty($yt_matches[0])){
                 foreach ( $yt_matches[0] as $kyt => $yt ) {
                     $the_content = str_replace( $yt, '<figure class="op-interactive">
