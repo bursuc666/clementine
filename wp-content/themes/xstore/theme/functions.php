@@ -7,7 +7,7 @@ if(!function_exists('etheme_theme_styles')) {
     function etheme_theme_styles() {
         if ( !is_admin() ) {
             wp_enqueue_style("fa",get_template_directory_uri().'/css/font-awesome.min.css');
-            wp_enqueue_style("bootstrap",get_template_directory_uri().'/css/bootstrap.min.css');
+            //wp_enqueue_style("bootstrap",get_template_directory_uri().'/css/bootstrap.min.css');
             wp_enqueue_style("parent-style",get_template_directory_uri().'/style.css', array("bootstrap"));
             wp_enqueue_style( 'js_composer_front');
             wp_enqueue_style("google-fonts",etheme_http()."fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic");
